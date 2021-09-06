@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>control</servlet-name>
+        <servlet-class>control</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>generator</servlet-name>
+        <servlet-class>generator</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>pdf</servlet-name>
+        <servlet-class>pdf</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>control</servlet-name>
+        <url-pattern>/control</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>generator</servlet-name>
+        <url-pattern>/generator</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>pdf</servlet-name>
+        <url-pattern>/pdf</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
